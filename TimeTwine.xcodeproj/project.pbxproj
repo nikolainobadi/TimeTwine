@@ -52,10 +52,8 @@
 		D490945F2B7EACDF0058DEAC /* TimeTwine */ = {
 			isa = PBXGroup;
 			children = (
-				D49094602B7EACDF0058DEAC /* TimeTwineApp.swift */,
-				D49094622B7EACDF0058DEAC /* ContentView.swift */,
-				D49094642B7EACE00058DEAC /* Assets.xcassets */,
-				D49094662B7EACE00058DEAC /* TimeTwine.entitlements */,
+				D49094702B7EACEE0058DEAC /* Sources */,
+				D49094712B7EACF10058DEAC /* Resources */,
 				D49094672B7EACE00058DEAC /* Preview Content */,
 			);
 			path = TimeTwine;
@@ -67,6 +65,40 @@
 				D49094682B7EACE00058DEAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D490946F2B7EACEB0058DEAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D49094602B7EACDF0058DEAC /* TimeTwineApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D49094702B7EACEE0058DEAC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D490946F2B7EACEB0058DEAC /* App */,
+				D49094722B7EACFB0058DEAC /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D49094712B7EACF10058DEAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D49094642B7EACE00058DEAC /* Assets.xcassets */,
+				D49094662B7EACE00058DEAC /* TimeTwine.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D49094722B7EACFB0058DEAC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D49094622B7EACDF0058DEAC /* ContentView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +298,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimeTwine/TimeTwine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TimeTwine/Resources/TimeTwine.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeTwine/Preview Content\"";
+				DEVELOPMENT_TEAM = R8SJ24LQF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -289,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nobadi.TimeTwine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -302,10 +337,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimeTwine/TimeTwine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TimeTwine/Resources/TimeTwine.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeTwine/Preview Content\"";
+				DEVELOPMENT_TEAM = R8SJ24LQF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -325,6 +362,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nobadi.TimeTwine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
